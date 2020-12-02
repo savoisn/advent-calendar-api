@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-app.get("/", (req, res) => {
+app.get("/daySinceFirstDec", (req, res) => {
   const startUpDateStr ="2020-11-30T00:00+01:00"
 	const startUpDate = Date.parse(startUpDateStr);
 
